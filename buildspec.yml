@@ -2,11 +2,12 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 10.16.3
     commands:
       # Install dependencies needed for running tests
       - npm install
-      runtime-versions:
-        nodejs: 10.16.3
+    
 
   pre_build:
     commands:
